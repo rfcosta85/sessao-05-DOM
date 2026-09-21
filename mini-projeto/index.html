@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratório de Manipulação do DOM</title>
+  
+  <!-- Vinculação do ficheiro CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🧪 Laboratório Prático de Manipulação do DOM</h1>
+
+  <div class="container">
+    
+    <!-- LADO ESQUERDO: Elementos HTML que serão manipulados -->
+    <div class="painel">
+      <h2>Área de Exibição (DOM)</h2>
+      <hr>
+
+      <!-- Tag 1: H1 -->
+      <h3 id="titulo-alvo">1. Título Original</h3>
+
+      <!-- Tag 2: Parágrafos -->
+      <div class="paragrafos">
+        <p class="texto">2. Primeiro parágrafo da lista (Índice 0).</p>
+        <p class="texto">3. Segundo parágrafo da lista (Índice 1).</p>
+      </div>
+
+      <!-- Tag 3: Imagem -->
+      <div class="bloco-imagem">
+        <p><strong>4. Elemento de Imagem:</strong></p>
+        <img id="imagem-alvo" src="https://via.placeholder.com/300x150/0984e3/FFFFFF?text=Imagem+A" alt="Imagem A">
+      </div>
+
+      <!-- Tag 4: Caixas dinâmicas -->
+      <div id="container-dinamico" class="container-dinamico">
+        <p class="legenda-container">Container para novos elementos:</p>
+      </div>
+    </div>
+
+    <!-- LADO DIREITO: Botões de Ação para acionar o JS -->
+    <div class="painel controles">
+      <h2>Ações de Manipulação</h2>
+      <hr>
+
+      <button id="btn-titulo">
+        1. Alterar Texto do Título (<code>querySelector + textContent</code>)
+      </button>
+
+      <button id="btn-paragrafos">
+        2. Adicionar/Remover Classe em Todos os Parágrafos (<code>querySelectorAll + classList</code>)
+      </button>
+
+      <button id="btn-imagem">
+        3. Alterar Atributo da Imagem (<code>querySelector + setAttribute/src</code>)
+      </button>
+
+      <button id="btn-adicionar">
+        4. Criar e Inserir Nova Tag Dinamicamente (<code>createElement + appendChild</code>)
+      </button>
+
+      <button id="btn-remover">
+        5. Remover Elemento do DOM (<code>remove()</code>)
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Vinculação do ficheiro JavaScript externo (com defer para carregar após o HTML) -->
+  <script src="script.js" defer></script>
+</body>
+</html>
