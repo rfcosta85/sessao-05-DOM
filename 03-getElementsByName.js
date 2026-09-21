@@ -1,5 +1,5 @@
 function processarAgendamento() {
-    const radiosVeiculo = document.getElementsByName("tipoVeiculo");    
+    const radiosVeiculo = document.getElementsByName("tipoVeiculo"); 
     const checkboxesServicos = document.getElementsByName("servicos");
 
     let veiculoSelecionado = "";
@@ -52,3 +52,4 @@ function limparSelecao() {
 
     document.getElementById("resultado").innerHTML = "";
 }
+
