@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo: getElementsByName</title>
+    <link rel="stylesheet" href="03-getElementsByName.css">
+    <script src="03-getElementsByName.js"></script>
+</head>
+<body>
+
+    <h2>Agendamento de Inspeção - Portal IMT</h2>
+
+    <form id="form-inspecao">
+        <p><strong>Selecione o tipo de veículo:</strong></p>        
+        
+        <label>
+            <input type="radio" name="tipoVeiculo" value="Ligeiro de Passageiros"> Ligeiro
+        </label><br>
+        <label>
+            <input type="radio" name="tipoVeiculo" value="Motociclo / Ciclomotor"> Motociclo
+        </label><br>
+        <label>
+            <input type="radio" name="tipoVeiculo" value="Pesado de Mercadorias"> Pesado
+        </label>
+
+        <p><strong>Serviços Adicionais:</strong></p>
+        
+        <label>
+            <input type="checkbox" name="servicos" value="Emissão de Certificado Digital"> 
+            Emissão de Certificado Digital
+        </label><br>
+        <label>
+            <input type="checkbox" name="servicos" value="Verificação de Emissões/Gases"> 
+            Verificação de Gases
+        </label><br>
+        <label>
+            <input type="checkbox" name="servicos" value="Inspeção Extraordinária">
+             Inspeção Extraordinária
+        </label>
+
+        <br><br>
+        <button type="button" onclick="processarAgendamento()">Confirmar Seleção</button>
+        <button type="button" onclick="limparSelecao()">Limpar Opções</button>
+    </form>
+
+    <hr>
+    <div id="resultado" style="margin-top: 15px; font-weight: bold;"></div>    
+</body>
+</html>
