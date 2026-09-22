@@ -1,4 +1,3 @@
-// Configurações base em pixels
 const TAMANHO_INICIAL = 16;
 let tamanhoAtual = TAMANHO_INICIAL;
 
