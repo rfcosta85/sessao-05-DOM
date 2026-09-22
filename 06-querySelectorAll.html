@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo: querySelectorAll com .forEach()</title>
+    <link rel="stylesheet" href="06-querySelectorAll.css">
+    <script src="06-querySelectorAll.js" defer></script>
+</head>
+<body>
+
+    <h2>Pagamento de Taxas e Licenças - IMT</h2>
+    <p>Selecione os serviços que deseja incluir no documento de cobrança:</p>
+
+    <div class="servico-card" data-preco="30.00">
+        <input type="checkbox" class="check-servico">
+        <span>Renovação da Carta de Condução</span> - 
+        <span class="preco">€30.00</span>
+    </div>
+
+    <div class="servico-card" data-preco="15.00">
+        <input type="checkbox" class="check-servico">
+        <span>Emissão de Segunda Via</span> - 
+        <span class="preco">€15.00</span>
+    </div>
+
+    <div class="servico-card" data-preco="50.00">
+        <input type="checkbox" class="check-servico">
+        <span>Averbamento de Categoria Profissional</span> - 
+        <span class="preco">€50.00</span>
+    </div>
+
+    <br>
+    <button type="button" id="btn-selecionar-todos">Marcar Todos</button>
+    <button type="button" id="btn-limpar">Desmarcar Todos</button>
+
+    <hr>
+    <h3>Total a Pagar: <span id="valor-total">€0.00</span></h3>
+
+</body>
+</html>

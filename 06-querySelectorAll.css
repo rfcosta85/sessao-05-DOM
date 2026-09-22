@@ -1,0 +1,13 @@
+.servico-card {
+            border: 2px solid #ccc;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .servico-card.selecionado {
+            border-color: #0d6efd;
+            background-color: #e7f1ff;
+        }
+        .preco { font-weight: bold; color: #198754; }
