@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo: querySelector</title>
+    <script src="05-querySelector.js" defer></script>
+    <link rel="stylesheet" href="05-querySelector.css">
+</head>
+<body>
+
+    <h2>Consulta de Utente - Portal IMT</h2>
+
+    <div class="campo-form">
+        <label for="input-nif">NIF do Cidadão:</label>
+        <input type="text" id="input-nif" placeholder="Ex: 123456789">
+        
+        <button type="button" data-acao="consultar">Buscar Utente</button>
+    </div>
+
+    <p class="status-mensagem"></p>
+
+    <div id="painel-detalhes"></div>
+
+</body>
+</html>
